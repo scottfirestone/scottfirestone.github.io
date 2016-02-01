@@ -61,29 +61,20 @@ html{
 *:after {
 	box-sizing: inherit;
 }
-body {
-	position: relative;
-	margin: 0;
-	padding-bottom: 6rem;
-	min-height: 100%;
-	text-align: center;
-	background-image: url("/../assets/white_mountain.jpg");
-	font-family: "Helvetica Neue", Arial, sans-serif;
-}
+
 #title {
-	text-align: justify;
+	text-align: center;
 	letter-spacing: 1px;
 	padding: 2em 10%;
 	background: black;
 	height: 30px;
 	color: white;
-	font-style: italic;
+	font-style: sans-serif;
 }
 #title a{
-	font-size: 300%;
+	font-size: 150%;
   color: white;
 	text-decoration: none;
-	margin-left: 30px;
 }
 #title a:hover{
   color: darkgrey;
@@ -93,8 +84,28 @@ body {
   color: darkgrey;
 	text-decoration: none;
 }
+body {
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	text-align: center;
+	background-color: linen;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+}
+img {
+	height: 50%;
+	width: 50%;
+}
 p {
 	padding: 10px;
+	size: 30px;
+
+}
+.post_name {
+	font: sans-serif;
+	text-align: left;
+	color: black;
 }
 #container{
 	height: 100%;
@@ -113,7 +124,11 @@ p {
 	width: 100%;
 	background-color: black;
 	color: white;
-	font-style: italic;
+	font-style: sans-serif;
+}
+#footer nav{
+	margin-left: auto;
+	margin-right: auto;
 }
 #footer a{
 	font-size: 180%;
@@ -134,4 +149,5 @@ p {
 	position: relative;
 	height: 35px;
 	width: 35px;
+	border-radius: 25px;
 }
