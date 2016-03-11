@@ -12,10 +12,8 @@ date: 2016-03-11
 
 <p>Here's a uniqueness Shoulda Matcher for the username attribute of a hypothetical user model:</p>
 
-<code>
-  describe User do
-    it { should validate_uniqueness_of(:username) }
-  end
-</code>
+<code>describe User do</code>
+  <code>it { should validate_uniqueness_of(:username) }</code>
+<code>end</code>
 
 </p>And that's it. If the User model is setup with proper uniqueness validation for username, the test will pass. Tools like Shoulda Matchers make test writing, and thus, life as a developer, far easier.</p>
