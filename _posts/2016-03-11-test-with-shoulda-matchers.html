@@ -4,20 +4,18 @@ layout: post
 date: 2016-03-11
 ---
 
-<p>
-  One of my main focuses going through Module 2 at the Turing School of Software and Design was to improve at test driven development with rails.
+<p>One of my main focuses going through Module 2 at the Turing School of Software and Design was to improve at test driven development with rails.</p>
 
-  For testing at the model level, the use of Shoulda Matchers is crucial. Developed by thoughtbot, Shoulda Matchers make testing model validations and associations very simple.
+<p>For testing at the model level, the use of Shoulda Matchers is crucial. Developed by thoughtbot, Shoulda Matchers make testing model validations and associations very simple.</p>
 
-  For example, for uniqueness validation, Shoulda Matchers looks for an instance of whatever model is being tested in the database, or if one is not found, creates one. It then attempts to create another instance of that same model with the identical tested attribute. If the instance can be saved, the match test will fail.
+<p>For example, for uniqueness validation, Shoulda Matchers looks for an instance of whatever model is being tested in the database, or if one is not found, creates one. It then attempts to create another instance of that same model with the identical tested attribute. If the instance can be saved, the match test will fail.</p>
 
-  Here's a uniqueness Shoulda Matcher for the username attribute of a hypothetical user model:
+<p>Here's a uniqueness Shoulda Matcher for the username attribute of a hypothetical user model:</p>
 
-  <code>
-    describe User do
-      it { should validate_uniqueness_of(:username) }
-    end
-  </code>
+<code>
+  describe User do
+    it { should validate_uniqueness_of(:username) }
+  end
+</code>
 
-  And that's it. If the User model is setup with proper uniqueness validation for username, the test will pass. Tools like Shoulda Matchers make test writing, and thus, life as a developer, far easier.
-</p>
+</p>And that's it. If the User model is setup with proper uniqueness validation for username, the test will pass. Tools like Shoulda Matchers make test writing, and thus, life as a developer, far easier.</p>
